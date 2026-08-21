@@ -726,8 +726,8 @@ initDb()
     app.listen(PORT, "0.0.0.0", () => {
       console.log(`Marketing Manager backend listening on port ${PORT}`);
     });
-  })
-  .catch((error) => {
-    console.error("Database initialization failed:", error);
-    process.exit(1);
-  });
+app.get("/", (req, res) => res.type("html").send(CLIENT_HTML));
+app.get("/admin", (req, res) => res.type("html").send(ADMIN_HTML));
+app.get("/admin/", (req, res) => res.type("html").send(ADMIN_HTML));
+app.get("/client", (req, res) => res.type("html").send(CLIENT_HTML));
+app.get("/client/", (req, res) => res.type("html").send(CLIENT_HTML));
