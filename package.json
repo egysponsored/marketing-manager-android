@@ -1,0 +1,18 @@
+{
+  "name": "marketing-manager-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend for Marketing Manager Admin and Client Android apps",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.3"
+  }
+}
